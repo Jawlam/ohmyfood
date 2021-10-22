@@ -208,20 +208,20 @@ header
 
   .loader {
     background: linear-gradient(#FFFFFF, #99E2D0, #FF79DA, #9356DC);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     font-size: x-large;
     text-align: center;
     position: fixed;
     animation: loader 1s ease-in-out 3s forwards;
-  }
 
-  .loader img {
-    vertical-align: middle;
-    position: absolute;
-    top: 40%;
-    left: 28%;
-    animation: grow 1s ease-in-out infinite;;
+    img {
+      vertical-align: middle;
+      position: absolute;
+      top: 40%;
+      left: 28%;
+      animation: grow 1s ease-in-out infinite;;
+    }
   }
 
   
@@ -269,21 +269,26 @@ header
     
     transform: scaleY(1);
   }
+
+  75%{
+  transform: scaleY(1.25);
+  }
+
   50% {
     
-    transform: scaleY(1.8);
+    transform: scaleY(1.5);
   }
   25% {
-    transform: scaleY(2);
+    transform: scaleY(1.25);
 
   }
   0% {
-    transform: scaleY(2.5);
+    transform: scaleY(1);
   }
  }
 
   .fill:hover {
-    animation: fill 0.3s ease-in-out;
+    animation: fill 0.3s ease-in-out ;
     display: inline-block;
     opacity: 1;
     background: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
@@ -293,20 +298,20 @@ header
   }
   
   @keyframes fill {
-    0% {
+    100% {
       opacity: 1;
     }
-    25%{
+    75%{
       opacity: 0.75;
     }
     50% {
       opacity: 0.5;
     }
-    75%{
+    25%{
       opacity:0.25;
     }
 
-    100% {
+    0% {
       opacity: 0;
     }
   }
