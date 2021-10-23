@@ -107,7 +107,7 @@ header
   .operation ul
   {
       margin: 0;
-      padding: 0;
+      padding: 45;
   }
 
   .restaurant {
@@ -319,13 +319,15 @@ header
 
   /* PAGES */
 
+
 .arrow {
     position: absolute;
     left: 20px;
   }
 
+  
 .menu {
-  background-color: #f6f6f6;
+  background-color: #f2f2f2 ;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   width: 100%;
@@ -369,15 +371,35 @@ header
   position: relative;
   cursor: pointer;
   white-space: nowrap;
-  text-overflow: ellipsis;
+  
   overflow: hidden;
   transition: padding-right 450ms ease-in-out;
 }
 
+.starter{
+  animation: fadein 1s ease-in-out;
+}
+
+.dish{
+  animation: fadein 2s ease-in-out
+}
+
+.dessert{
+  animation: fadein 3s ease-in-out;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .cross {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; 
   background-color: #99E2D0;
   width: 50px;
   height: 63px;
@@ -414,9 +436,18 @@ header
   justify-content: space-between;
   align-items: center;
   line-height: 1.5em;
+
 }
 
+.last__line span {
+  margin-right: 25px;
+}
 
+.last__line p {
+  
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
 
 .btn__order {
   display: flex;

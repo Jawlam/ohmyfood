@@ -104,6 +104,8 @@ header {
   padding: 0;
 }
 
+
+
 .restaurant {
   background: #f2f2f2;
   display: flex;
@@ -304,7 +306,7 @@ footer ul .fa-hands-helping {
 }
 
 .menu {
-  background-color: #f6f6f6;
+  background-color: #f2f2f2;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   width: 100%;
@@ -347,15 +349,33 @@ footer ul .fa-hands-helping {
   position: relative;
   cursor: pointer;
   white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
   transition: padding-right 450ms ease-in-out;
 }
 
+.starter {
+  animation: fadein 1s ease-in-out;
+}
+
+.dish {
+  animation: fadein 2s ease-in-out;
+}
+
+.dessert {
+  animation: fadein 3s ease-in-out;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .cross {
   display: flex;
   justify-content: center;
-  align-items: center;
   background-color: #99E2D0;
   width: 50px;
   height: 63px;
@@ -394,6 +414,15 @@ footer ul .fa-hands-helping {
   line-height: 1.5em;
 }
 
+.last__line span {
+  margin-right: 25px;
+}
+
+.last__line p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 .btn__order {
   display: flex;
   justify-content: center;
@@ -411,6 +440,12 @@ footer ul .fa-hands-helping {
   margin: 30px 0;
   padding: 20px;
   width: 50%;
+}
+
+.btn__order button:hover {
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+  box-shadow: 6px 6px 8px #aaa;
 }
 
 /*# sourceMappingURL=style.css.map */
