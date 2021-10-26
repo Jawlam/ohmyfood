@@ -7,6 +7,9 @@
 
 }
 
+
+
+
 a
 {
   text-decoration: none;
@@ -47,13 +50,14 @@ header
   .about h2 {
     font-weight: bold;
     padding: 20px 10px;
+    
   }
   .about p {
     color: #4d4d4d;
     padding: 20px 10px;
   }
   
-  .btn__about button {
+  .btn__about button{
     background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
     border: 1px solid transparent;
     border-radius: 30px;
@@ -63,9 +67,17 @@ header
     box-shadow: 4px 4px 6px #aaa;
     cursor: pointer;
   }
-
+  
+  .btn__about button:hover{
+    background-color: #ae80e5;
+    background-blend-mode: lighten;
+    box-shadow: 6px 6px 8px #aaa;
+  }
+  
   .operation h2 {
     padding: 20px;
+    font-weight: bold;
+    
   }
 
   .operation__steps {
@@ -83,6 +95,8 @@ header
     border-radius: 20px;
     box-shadow: 1px 2px 8px 2px #c4c4c4;
     background-color: #f5f5f5;
+
+    
   }
 
   .operation__steps li p {
@@ -106,19 +120,29 @@ header
 
   .operation ul
   {
-      margin: 0;
-      padding: 45;
+      margin: 45px 0px;
+      padding: 0;
+  }
+
+  .operation__steps li:hover{
+    background: #f2eafb;
+  }
+  .operation__steps .fas :hover{
+    color: #9356dc;
   }
 
   .restaurant {
     background: #f2f2f2;
     display: flex;
     flex-direction: column;
-    margin: 50px 0px;
+    border-bottom: 45px solid #f2f2f2;
+    
   }
 
   .restaurant h3{
     padding: 10px;
+    font-weight: bold;
+  
   }
 
   .card {
@@ -127,7 +151,10 @@ header
     margin: 20px;
     position: relative;
     background: #fff;
+    
   }
+
+
 
   .card img {
     object-fit: cover;
@@ -136,6 +163,7 @@ header
     width: 100%;
     height: 100%;
     max-height: 220px;
+    
   }
 
   .card figure {
@@ -210,11 +238,12 @@ header
     background: linear-gradient(#FFFFFF, #99E2D0, #FF79DA, #9356DC);
     width: 100vw;
     height: 100vh;
-    font-size: x-large;
+    
     text-align: center;
     position: fixed;
     animation: loader 1s ease-in-out 3s forwards;
 
+    
     img {
       vertical-align: middle;
       position: absolute;
@@ -319,6 +348,9 @@ header
 
   /* PAGES */
 
+.main__menu{
+  background-color:#f2f2f2;
+}
 
 .arrow {
     position: absolute;
@@ -331,9 +363,12 @@ header
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   width: 100%;
+
   position: relative;
   margin-top: -50px;
+  
 }
+
 
 
 .menu__img img {
@@ -452,6 +487,8 @@ header
 .btn__order {
   display: flex;
   justify-content: center;
+  
+
 }
 
 .btn__order button{
@@ -467,3 +504,13 @@ header
   padding: 20px;
   width: 50%;
 }
+
+.btn__order button:hover {
+  background-color: #ae80e5;
+  background-blend-mode: lighten;
+  box-shadow: 6px 6px 8px #ae80e5;
+}
+
+
+/* MEDIA QUERIES */
+
