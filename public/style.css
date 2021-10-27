@@ -230,15 +230,15 @@ footer ul .fa-hands-helping {
 .loader img {
   vertical-align: middle;
   position: absolute;
-  top: 40%;
-  left: 28%;
+  top: 50%;
+  left: 30%;
   animation: grow 1s ease-in-out infinite;
 }
 
 .loader__burger {
   vertical-align: middle;
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   animation: rotate 1s linear infinite;
 }
@@ -466,5 +466,45 @@ footer ul .fa-hands-helping {
 }
 
 /* MEDIA QUERIES */
+@media screen and (min-width: 600px) {
+  .loader img {
+    left: 45%;
+  }
+
+  .operation__steps {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .operation h2 {
+    text-align: center;
+  }
+
+  .restaurant {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  .card {
+    width: 40%;
+  }
+
+  .restaurant__title {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .restaurant {
+    padding: 0 20%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
