@@ -552,10 +552,20 @@ header
     footer {
       text-align: center;
     }
+
+
 }
 
-@media screen and (min-width: 1280px) {
+
+@media screen and (min-width: 1150px) {
   .restaurant {
     padding: 0 20%;
   }
+
+  .full__menu {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  
 }
