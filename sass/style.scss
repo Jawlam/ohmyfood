@@ -124,12 +124,12 @@ header
       padding: 0;
   }
 
-  .operation__steps li:hover{
-    background: #f2eafb;
-  }
-  .operation__steps .fas :hover{
-    color: #9356dc;
-  }
+ .operation__steps li:hover {
+  background: #f2eafb;
+}
+.operation__steps li:hover .fas {
+  color: #9356dc;
+}
 
   .restaurant {
     background: #f2f2f2;
@@ -235,15 +235,21 @@ header
   }
 
   .loader {
-    background: linear-gradient(#FFFFFF, #99E2D0, #FF79DA, #9356DC);
-    width: 100vw;
-    height: 100vh;
-    
+    background: -webkit-linear-gradient(#FFFFFF, #99E2D0, #FF79DA, #9356DC);
+    width: 100%;
+    height: 100%;
+    line-height: 100%;
+    font-family: Shrikhand, sans-serif;
+    font-size: x-large;
+    vertical-align: middle;
     text-align: center;
     position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    pointer-events: none;
     animation: loader 1s ease-in-out 3s forwards;
 
-    
     img {
       vertical-align: middle;
       position: absolute;
@@ -553,7 +559,9 @@ header
       text-align: center;
     }
 
-
+    
+   
+    
 }
 
 
@@ -567,5 +575,21 @@ header
     justify-content: space-around;
   }
 
-  
+  .starter{
+    width: 400px;
+  }
+
+  .dish{
+    width: 400px;
+  }
+
+  .dessert{
+    width: 400px;
+  }
+
+  .btn__order button {
+    width: 25%;
+  }
+
+
 }
